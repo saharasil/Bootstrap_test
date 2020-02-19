@@ -10,9 +10,16 @@
     
     <!-- Bootstrap en local  -->
     <link rel="stylesheet" href="css/bootstrap.css">
-    
     <!-- Bootstrap en CDN  -->
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <style>
+    .bleu {
+      background: lightskyblue;
+    }
+    .rose {
+      background: lightcoral;
+    }
+    </style>
 </head>
 <body>
     <!-- la nav bar de notre site  -->
@@ -39,7 +46,7 @@
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="page1.html">Page 1</a>
-                    <a class="dropdown-item" href="#">Page 2</a>
+                    <a class="dropdown-item" href="page2.html">Grille Exemple</a>
                     <a class="dropdown-item" href="#">Page 3</a>
                     <a class="dropdown-item" href="#">Page 4</a>
                     <a class="dropdown-item" href="#">Page 5</a>
@@ -99,26 +106,178 @@
                   <!-- fermeture de la col-12  -->
             </div>
           </div>
-          <!-- fermeture container du slider  -->
+         
       </div>
+      <hr>
+      </div> <!-- fermeture container du slider  -->
 
-      <div class="container mt-4">
-          <div class="row">
-              <div class="col-4 bg-secondary">
-                <div class="card" style="width: 18rem; margin: 5px;">
-                  <img src="..." class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
+
+<!-- Le second container  -->
+      <div class="container ">
+        <div class="row">
+            <div class="col-sm-4">
+              <div class="row ">
+                <div class="col-2 col-lg-4 ">
+                  <img src="img/40X40.gif" alt="image ronde" class="rounded-circle">
+                </div>
+                <div class="col-10 col-lg-8 ">
+                  <h5>Nos motifs</h5>
+                </div>
+              </div> <!--fermeture premièr row imbriqué-->
+           </div> <!--fermeture du premièr col dans la row-->
+            <div class="col-sm-4">
+              <div class="row">
+                <div class="col-2 col-lg-4 ">
+                  <img src="img/40X40.gif" alt="image ronde" class="rounded-circle">
+                </div>
+                <div class="col-10 col-lg-8 ">
+                  <h5>Nos produit</h5>
+                </div>
+              </div><!--fermeture du deusième row imbriqué-->
+            </div><!--fermeture du deusième col dans la row -->
+            <div class="col-sm-4"> 
+              <div class="row">
+                <div class=" col-2 col-lg-4 ">
+                  <img src="img/40X40.gif" alt="image ronde" class="rounded-circle">
+                </div>
+                <div class=" col-10 col-lg-8 ">
+                  <h5>Nos promos</h5>
+                </div>
+              </div><!--fermeture troisième row imbriqué-->
+              
+            </div><!--fermeture du trousième col dans la row -->
+        </div><!--fermeture row-->
+        <hr>
+    </div><!--fermeture conteneur 2-->
+
+  <!-- 3eme container  -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="text-center">A LA UNE AUJOURD'HUI</h2>
+          <hr>
+        </div><!--fermeteure col-12-->
+      </div><!--fermeture du row-->
+    </div><!--fermeture du conteneur 3-->
+
+  <!-- 4éme container  -->
+    <div class="container">
+      <div class="row">
+
+      <!-- La première card  -->
+        <div class="col-md-4 ">
+          <div class="card" >
+            <img src="img/img1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">5 sortes de médias </h5>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">les très petits : smartphones en mode portrait (moins de 576px),</li>
+                    <li class="list-group-item" class="list-group-item">les petits : smartphones en mode paysage (plus de 576px mais moins de 768px),</li>
+                    <li class="list-group-item" class="list-group-item">les moyens : tablettes (plus de 768px mais moins de 992px),</li>
+                    <li class="list-group-item" class="list-group-item">les grands : (plus de 992px mais moins de 1200px),</li>
+                    <li class="list-group-item" class="list-group-item">les très grands : (plus de 1200px).</li>
+                </ul>
+              <a href="#" class="btn btn-dark">En savoir plus</a>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- La deuxième card avec un carousel  -->
+        <div class="col-md-4 ">
+          <div class="card" >
+            <div id="carouselCard" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/img5.jpg" class="d-block w-100" alt="Belle photo">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/img6.jpg" class="d-block w-100" alt="violet">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/img7.jpg" class="d-block w-100" alt="Plui bleu">
                 </div>
               </div>
-              <div class="col-4 bg-dark text-white">colonne</div>
-              <div class="col-4 bg-secondary">colonne</div>
+              <a class="carousel-control-prev" href="#carouselCard" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="##carouselCard" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title text-center">Le nom des classes</h5>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">rien pour les très petits écrans (valeur de référence)</li>
+                  <li class="list-group-item">sm pour small,</li>
+                  <li class="list-group-item">md pour medium,</li>
+                  <li class="list-group-item">lg pour large,</li>
+                  <li class="list-group-item">xl pour x-large.</li>
+                </ul class="list-group list-group-flush">
+              <a href="#" class="btn btn-dark">En savoir plus</a>
+            </div>
           </div>
+        </div>
+
+        <!-- La troisième card  -->
+        <div class="col-md-4">
+          <div class="card" >
+            <img src="img/img4.jpg" class="card-img-top" alt="hiver et plui">
+            <div class="card-body">
+              <h5 class="card-title text-center">Les colonnes</h5>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Une colonne : col-1 ou col-sm-1 ou col-md-1 ou col-lg-1 ou col-xl-1</li>
+                  <li class="list-group-item">Deux colonnes : col-2 ou col-sm-2 ou col-md-2 ou col-lg-2 ou col-xl-2</li>
+                  <li class="list-group-item">…</li>
+                  <li class="list-group-item">Douze colonnes : col-12 ou col-sm-12 ou col-md-12 ou col-lg-12 ou col-xl-12</li>
+                </ul>
+              <a href="#" class="btn btn-dark">En savoir plus</a>
+            </div>
+          </div>
+        </div>
+      </div><!--fermeture du row-->
+      <hr>
+    </div><!--fermeteure du conteneur 4-->
+
+<!-- 5éme container  -->
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h2 class="text-center">PRODUIT A LA UNE</h2>
+      <hr>
+    </div><!--fermeteure col-12-->
+  </div><!--fermeture du row-->
+  <hr>
+</div><!--fermeture du conteneur 5-->
+
+<!-- 6éme container  -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4"> 
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem adipisci aliquid quas repudiandae. Asperiores maiores dignissimos, ad dolorem, distinctio hic iusto qui nam soluta repudiandae atque consectetur tempora excepturi blanditiis.
+
+    </div>
+    <div class="col-lg-4"> 
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem adipisci aliquid quas repudiandae. Asperiores maiores dignissimos, ad dolorem, distinctio hic iusto qui nam soluta repudiandae atque consectetur tempora excepturi blanditiis.
+
+    </div>
+    <div class="col-lg-4">
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem adipisci aliquid quas repudiandae. Asperiores maiores dignissimos, ad dolorem, distinctio hic iusto qui nam soluta repudiandae atque consectetur tempora excepturi blanditiis.
       </div>
-    <h1></h1>
+  </div><!--fermeture du row-->
+</div><!--fermeture container 6-->
+
+
+
+
+ 
+
+     
+         
+
 
 
 
